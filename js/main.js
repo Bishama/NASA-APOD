@@ -8,9 +8,9 @@ function getData(){
     .then(res => res.json()) // parse response as JSON
     .then(data => {
       console.log(data)
-      document.querySelector('h2').innerText = data.title;
+      document.querySelector('h5').innerText = data.title;
       document.querySelector('img').src = data.url;
-      document.querySelector('h3').innerText = data.explanation;
+      document.querySelector('p').innerText = data.explanation;
     })
     .catch(err => {
         console.log(`error ${err}`)
